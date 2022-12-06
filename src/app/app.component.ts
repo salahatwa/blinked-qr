@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { BlinkedQrComponent, BlinkedQrService } from 'projects/blinked-qr/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +10,19 @@ export class AppComponent {
   title = 'blinked';
   template: any = 'ocean';
   data: any = 'sample data';
-  frame:any={
-    style: 'F_022',
-    height: 200,
-    width: 200,
-    x: 60,
-    y: 60
-  };
+
+  constructor(private testDI: BlinkedQrService) {
+    // test DI!
+  }
+  /**
+  * Download
+  */
+  onDownload2(qrcode: BlinkedQrComponent): void {
+    qrcode.download('file-name.png').subscribe((res) => {
+      // TO DO something!
+      console.log('download:', res);
+    });
+  }
+
+
 }
