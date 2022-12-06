@@ -1,17 +1,14 @@
 import { Options } from "./blinked-qrcode.options";
-
 export const Templates = (name: string) => {
     switch (name) {
-        case 'classic':
+        case 'default':
             return {
-                data: 'classic',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#202020',
-                    type: 'classy'
                 },
                 backgroundOptions: {
                     color: "#ffffff",
@@ -19,10 +16,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'ocean':
             return {
-                data: 'ocean',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     type: 'dots',
@@ -49,10 +45,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'sunflower':
             return {
-                data: 'sunflower',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     type: 'dots',
@@ -84,10 +79,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'luxury':
             return {
-                data: 'luxury',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     type: 'classy-rounded',
@@ -119,10 +113,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'bitcoin':
             return {
-                data: 'bitcoin',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#3a3a3a',
@@ -140,10 +133,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'starbucks':
             return {
-                data: 'starbucks',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#3a3a3a',
@@ -163,10 +155,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'angular':
             return {
-                data: 'angular',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#c3002f',
@@ -178,10 +169,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'facebook':
             return {
-                data: 'facebook',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#4D72A9',
@@ -191,12 +181,11 @@ export const Templates = (name: string) => {
                     color: "#ffffff",
                 }
             } as Options;
-        case 'jungle':
+        case 'beans':
             return {
-                data: 'jungle',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#416B2C',
@@ -215,10 +204,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'green':
             return {
-                data: 'green',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#006B3B',
@@ -238,33 +226,23 @@ export const Templates = (name: string) => {
             } as Options;
         case 'sky':
             return {
-                data: 'sky',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
-                    color: '#0567A2',
+                    color: '#2c7597',
                     type: 'rounded'
                 },
                 backgroundOptions: {
                     color: "#ffffff",
                 },
-                cornersDotOptions: {
-                    color: '#0277BD',
-                    type: 'dot'
-                },
-                cornersSquareOptions: {
-                    color: '#075685',
-                    type: 'extra-rounded'
-                }
             } as Options;
         case 'mosaic':
             return {
-                data: 'mosaic',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     type: 'rounded',
@@ -289,10 +267,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'coffee':
             return {
-                data: 'coffee',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#5E4F39',
@@ -304,10 +281,9 @@ export const Templates = (name: string) => {
             } as Options;
         case 'vintage':
             return {
-                data: 'vintage',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#2D7363',
@@ -318,42 +294,36 @@ export const Templates = (name: string) => {
                 },
                 cornersDotOptions: {
                     color: '#BE8C49',
-                    type: 'dot'
                 },
                 cornersSquareOptions: {
                     color: '#2D7363',
-                    type: 'extra-rounded'
                 }
             } as Options;
         case 'stamp':
             return {
-                data: 'stamp',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
-                    color: '#1C1E19',
+                    color: '#2a3c16',
                     type: 'square'
                 },
                 backgroundOptions: {
-                    color: "#9BAC5A",
+                    color: "#9cc66e",
                 },
                 cornersDotOptions: {
-                    color: '#AD081F',
-                    type: 'dot'
+                    color: '#4c692c',
                 },
                 cornersSquareOptions: {
-                    color: '#006B3B',
-                    type: 'dot'
+                    color: '#2a3c16',
                 }
             } as Options;
         case 'chess':
             return {
-                data: 'chess',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#F4EAA5',
@@ -363,16 +333,170 @@ export const Templates = (name: string) => {
                     color: "#494B49",
                 }
             } as Options;
+        case 'jungle':
+            return {
+                data: '',
+                qrOptions: {
+                    errorCorrectionLevel: 'Q'
+                },
+                dotsOptions: {
+                    type: 'classy-rounded',
+                    gradient: {
+                        type: 'radial',
+                        colorStops: [{
+                            offset: 0,
+                            color: '#84b931'
+                        }, {
+                            offset: 1,
+                            color: '#537234'
+                        }, {
+                            offset: 2,
+                            color: '#537234'
+                        }]
+                    }
+                },
+                cornersSquareOptions: {
+                    color: '#434343',
+                    gradient: {
+                    type: 'radial',
+                    colorStops: [{
+                        offset: 0,
+                        color: '#84b931'
+                    }, {
+                        offset: 1,
+                        color: '#537234'
+                    }, {
+                        offset: 2,
+                        color: '#537234'
+                    }]
+                    }
+                }
+            } as Options;
+        case 'arabic':
+            return {
+                data: '',
+                qrOptions: {
+                    errorCorrectionLevel: 'Q'
+                },
+                dotsOptions: {
+                    type: 'classy-rounded',
+                    gradient: {
+                        type: 'radial',
+                        colorStops: [{
+                            offset: 0,
+                            color: '#393939'
+                        }, {
+                            offset: 1,
+                            color: '#393939'
+                        }, {
+                            offset: 2,
+                            color: '#393939'
+                        }]
+                    }
+                },
+                cornersSquareOptions: {
+                    color: '#434343',
+                    gradient: {
+                        type: 'radial',
+                        colorStops: [{
+                            offset: 0,
+                            color: '#393939'
+                        }, {
+                            offset: 1,
+                            color: '#72a28b'
+                        }, {
+                            offset: 2,
+                            color: '#72a28b'
+                        }]
+                    }
+                }
+            } as Options;
+        case 'tea':
+            return {
+                data: '',
+                qrOptions: {
+                    errorCorrectionLevel: 'Q'
+                },
+                dotsOptions: {
+                    type: 'extra-rounded',
+                    gradient: {
+                        type: 'radial',
+                        colorStops: [{
+                            offset: 0,
+                            color: '#72b0b4'
+                        }, {
+                            offset: 1,
+                            color: '#035558'
+                        }, {
+                            offset: 2,
+                            color: '#035558'
+                        }]
+                    }
+                },
+                cornersSquareOptions: {
+                    color: '#434343',
+                    gradient: {
+                        type: 'radial',
+                        colorStops: [{
+                            offset: 0,
+                            color: '#72b0b4'
+                        }, {
+                            offset: 1,
+                            color: '#035558'
+                        }, {
+                            offset: 2,
+                            color: '#035558'
+                        }]
+                    }
+                }
+            } as Options;
+        case 'grape':
+            return {
+                data: '',
+                qrOptions: {
+                    errorCorrectionLevel: 'Q'
+                },
+                dotsOptions: {
+                    type: 'rounded',
+                    gradient: {
+                        type: 'radial',
+                        colorStops: [{
+                            offset: 0,
+                            color: '#7076ae'
+                        }, {
+                            offset: 1,
+                            color: '#2a3240'
+                        }, {
+                            offset: 2,
+                            color: '#2a3240'
+                        }]
+                    }
+                },
+                cornersSquareOptions: {
+                    color: '#434343',
+                    gradient: {
+                        type: 'radial',
+                        colorStops: [{
+                            offset: 0,
+                            color: '#7b7cb5'
+                        }, {
+                            offset: 1,
+                            color: '#2a3240'
+                        }, {
+                            offset: 2,
+                            color: '#2a3240'
+                        }]
+                    }
+                }
+            } as Options;
         default:
             return {
-                data: 'classic',
-                margin: 5,
+                data: '',
                 qrOptions: {
-                    errorCorrectionLevel: 'H'
+                    errorCorrectionLevel: 'Q'
                 },
                 dotsOptions: {
                     color: '#202020',
-                    type: 'classy'
                 },
                 backgroundOptions: {
                     color: "#ffffff",

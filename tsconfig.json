@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@angular/*": ["./node_modules/@angular/*"],
       "blinked-qr": ["dist/blinked-qr"],
       "blinked-qr/*": ["dist/blinked-qr/*"]
     },

@@ -9,7 +9,7 @@ import { deepUpdate, defaultTemplate, drawQrcode } from './blinked-qrcode.helper
 })
 export class BlinkedQrService {
 
-  /**
+ /**
    * create
    * @param config 
    * @param container 

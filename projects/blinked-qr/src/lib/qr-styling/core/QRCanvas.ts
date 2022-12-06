@@ -141,9 +141,11 @@ export default class QRCanvas {
           size: this._canvas.width > this._canvas.height ? this._canvas.width : this._canvas.height
         });
 
+        try{
         gradientOptions.colorStops.forEach(({ offset, color }: { offset: number; color: string }) => {
           gradient.addColorStop(offset, color);
         });
+      }catch(e){}
 
         canvasContext.fillStyle = gradient;
       } else if (options.backgroundOptions.color) {
@@ -211,9 +213,10 @@ export default class QRCanvas {
         size: count * dotSize
       });
 
+      try{
       gradientOptions.colorStops.forEach(({ offset, color }: { offset: number; color: string }) => {
         gradient.addColorStop(offset, color);
-      });
+      });}catch(e){}
 
       canvasContext.fillStyle = canvasContext.strokeStyle = gradient;
     } else if (options.dotsOptions.color) {
@@ -293,9 +296,11 @@ export default class QRCanvas {
           size: cornersSquareSize
         });
 
+        try{
         gradientOptions.colorStops.forEach(({ offset, color }: { offset: number; color: string }) => {
           gradient.addColorStop(offset, color);
         });
+      }catch(e){}
 
         canvasContext.fillStyle = canvasContext.strokeStyle = gradient;
       } else if (options.cornersSquareOptions?.color) {
@@ -341,9 +346,11 @@ export default class QRCanvas {
           size: cornersDotSize
         });
 
+        try{
         gradientOptions.colorStops.forEach(({ offset, color }: { offset: number; color: string }) => {
           gradient.addColorStop(offset, color);
         });
+      }catch(e){}
 
         canvasContext.fillStyle = canvasContext.strokeStyle = gradient;
       } else if (options.cornersDotOptions?.color) {

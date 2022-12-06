@@ -34,7 +34,7 @@ export class BlinkedQrComponent implements OnInit, OnChanges {
    * TemplateType
    */
   @Input()
-  public template: TemplateType = 'classic';
+  public template: TemplateType = 'default';
 
   /**
    * DrawType

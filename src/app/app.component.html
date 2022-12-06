@@ -1,39 +1,4 @@
-<!-- 
-<blinked-qr
-#qrcode
-[template]="template"
-[data]="data"
-[width]="200"
-[height]="200"
-[margin]="3"
-[backgroundOptions]="{ color: '#fff0' }"
-[frameOptions]="{
-  style: 'FE_020',
-  height: 400,
-  width: 370,
-  x: 88,
-  y: 410,
-  texts: [{
-    textContent: 'Create 2022',
-    fill: '#4d4d4d',
-    x: '31%',
-    y: '58%',
-    fontSize: '15pt',
-    fontFamily: 'cursive'
-  },{
-    textContent: 'Author: DaiDH',
-    fill: '#4d4d4d',
-    x: '29%',
-    y: '90%',
-    fontSize: '15pt',
-    fontFamily: 'cursive'
-  }]
-}"
-[dotsOptions]="{color: '#4a4a4a'}"
-(change)="onUpdate(qrcode)"
-></blinked-qr>
 
- -->
 
 <blinked-qr
 #qrcode
@@ -79,5 +44,15 @@
 {{template}}
 <br>
 {{data}}
+
+<blinked-qr
+[template]="'ocean'"
+[data]="'ngx-qrcode-styling'"
+[width]="285"
+[height]="285"
+[frameOptions]="frame"
+>
+</blinked-qr>
+<div class="qr_name">F_021</div>
 
 
