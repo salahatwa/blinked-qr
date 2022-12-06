@@ -39,7 +39,7 @@ export function drawQrcode(config: Options, container: HTMLElement | HTMLVideoEl
      * @returns 
      */
     const ADD_FRAME_SVG_TO_ELEMENT = () => {
-        const http = fetch(`https://raw.githubusercontent.com/id1945/ngx-qrcode-styling/main/svg/${config?.frameOptions?.style ?? 'style1'}.svg`, { method: 'GET' })
+        const http = fetch(`https://raw.githubusercontent.com/salahatwa/blinked-qr/master/frames/${config?.frameOptions?.style ?? 'style1'}.svg`, { method: 'GET' })
         return new Promise((resolve, reject) => {
             http.then(response => response.text()).then(result => {
                 const parser = new DOMParser();
