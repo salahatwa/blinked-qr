@@ -384,4 +384,14 @@ export class BlinkedQrComponent implements OnInit, OnChanges {
   public download(fileName: string, timeout = 100): AsyncSubject<any> {
     return this.service.download(fileName, this.canvas.nativeElement, timeout);
   }
+
+  /**
+  * download image
+  * @param fileName eg: demo.png
+  * @param timeout 
+  * @returns 
+  */
+  public getBase64(fileName: string, timeout = 100): AsyncSubject<any> {
+    return this.service.getBase64(fileName, this.canvas.nativeElement, timeout);
+  }
 }
